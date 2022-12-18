@@ -1,7 +1,22 @@
-import React from 'react';
+import React from "react";
 
-const Categories = () => {
-  return <h2>categories component</h2>;
+const Categories = ({ items }) => {
+	return (
+		<div>
+			{items.map((item) => {
+				return (
+					<div className="section-center">
+						<article className="menu-item">
+							<img
+								className="photo"
+								src={item.img}
+								alt={item.title}
+							/>
+						</article>
+					</div>
+				);
+			})}
+		</div>
+	);
 };
-
 export default Categories;
