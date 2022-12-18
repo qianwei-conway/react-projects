@@ -1,21 +1,17 @@
 import React from "react";
 
-const Categories = ({ items }) => {
+const Categories = ({ setCategory, allCategories }) => {
 	return (
-		<div>
-			{items.map((item) => {
-				return (
-					<div className="section-center">
-						<article className="menu-item">
-							<img
-								className="photo"
-								src={item.img}
-								alt={item.title}
-							/>
-						</article>
-					</div>
-				);
-			})}
+		<div className="btn-container">
+			{allCategories.map((category) => (
+				<button
+					key={category}
+					className="filter-btn"
+					onClick={() => setCategory(category)}
+				>
+					{category}
+				</button>
+			))}
 		</div>
 	);
 };
