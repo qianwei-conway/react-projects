@@ -1,16 +1,4 @@
-# React Projects
-
-#### React Course
-
-[My React Course](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
-
-#### Support
-
-Find the Content Useful? [You can always buy me a coffee](https://www.buymeacoffee.com/johnsmilga)
-
-#### Tutorial Video
-
-[React Tutorial](https://youtu.be/iZhV0bILFb0)
+# Qianwei's React Projects
 
 #### All Projects
 
@@ -54,9 +42,9 @@ Find the Content Useful? [You can always buy me a coffee](https://www.buymeacoff
 
 15. Cocktails
 
-## Advanced Projects (Course Exclusive)
+## Advanced Projects
 
-[My React Course](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
+[Where do I learn React?](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
 
 16. Markdown Preview
 17. Random Person
