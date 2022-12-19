@@ -4,6 +4,8 @@
 
 [Projects Site](https://react-projects.netlify.app/)
 
+[Where do I learn React?](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
+
 ## Corresponding Tutorial Topics
 
 #### useState
@@ -43,8 +45,6 @@
 15. Cocktails
 
 ## Advanced Projects
-
-[Where do I learn React?](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
 
 16. Markdown Preview
 17. Random Person
