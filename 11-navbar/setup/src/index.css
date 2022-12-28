@@ -205,6 +205,7 @@ nav {
 		display: none;
 	}
 	.links-container {
+		/* make sure this line is prior to the inline css */
 		height: auto !important;
 	}
 	.links {

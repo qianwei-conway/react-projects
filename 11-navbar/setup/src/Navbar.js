@@ -5,47 +5,55 @@ import logo from "./logo.svg";
 
 const Navbar = () => {
 	const [showLinks, setShowLinks] = useState(true);
+	const linksContainerRef = useRef(null);
+	const linksRef = useRef(null);
+
+	useEffect(() => {
+		const linksHeight = linksRef.current.getBoundingClientRect().height;
+
+		if (showLinks) {
+			linksContainerRef.current.style.height = `${linksHeight}px`;
+		} else {
+			linksContainerRef.current.style.height = "0px";
+		}
+	}, [showLinks]);
 
 	return (
-		<div className="nav-center">
-			<div className="nav-header">
-				<img src={logo} alt="logo" />
-				<button
-					className="nav-toggle"
-					onClick={() => setShowLinks(!showLinks)}
-				>
-					<FaBars />
-				</button>
-			</div>
+		<nav>
+			<div className="nav-center">
+				<div className="nav-header">
+					<img src={logo} alt="logo" />
+					<button
+						className="nav-toggle"
+						onClick={() => setShowLinks(!showLinks)}
+					>
+						<FaBars />
+					</button>
+				</div>
 
-			<div
-				className={
-					showLinks
-						? "links-container show-container"
-						: "links-container"
-				}
-			>
-				<ul className="links">
-					{links.map((link) => {
+				<div className="links-container" ref={linksContainerRef}>
+					<ul className="links" ref={linksRef}>
+						{links.map((link) => {
+							return (
+								<li key={link.id}>
+									<a href={link.url}>{link.text}</a>
+								</li>
+							);
+						})}
+					</ul>
+				</div>
+
+				<ul className="social-icons">
+					{social.map((socialIcon) => {
 						return (
-							<li key={link.id}>
-								<a href={link.url}>{link.text}</a>
+							<li key={socialIcon.id}>
+								<a href={socialIcon.url}>{socialIcon.icon}</a>
 							</li>
 						);
 					})}
 				</ul>
 			</div>
-
-			<ul className="social-icons">
-				{social.map((socialIcon) => {
-					return (
-						<li key={socialIcon.id}>
-							<a href={socialIcon.url}>{socialIcon.icon}</a>
-						</li>
-					);
-				})}
-			</ul>
-		</div>
+		</nav>
 	);
 };
 
