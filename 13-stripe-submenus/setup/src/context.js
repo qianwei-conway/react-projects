@@ -6,6 +6,8 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 	const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
+	const [location, setLocation] = useState({});
+	const [page, setPage] = useState({ page: "", links: [] });
 
 	function openSidebar() {
 		setIsSidebarOpen(true);
@@ -13,7 +15,11 @@ const AppProvider = ({ children }) => {
 	function closeSidebar() {
 		setIsSidebarOpen(false);
 	}
-	function openSubmenu() {
+	function openSubmenu(text, coords) {
+		// use find but not filter, because filter returns an array
+		const page = sublinks.find((sublink) => sublink.page === text);
+		setPage(page);
+		setLocation(coords);
 		setIsSubmenuOpen(true);
 	}
 	function closeSubmenu() {
@@ -22,14 +28,16 @@ const AppProvider = ({ children }) => {
 
 	return (
 		<AppContext.Provider
-			value={
-				(isSidebarOpen,
+			value={{
+				isSidebarOpen,
 				isSubmenuOpen,
 				openSidebar,
 				openSubmenu,
 				closeSubmenu,
-				closeSidebar)
-			}
+				closeSidebar,
+				location,
+				page,
+			}}
 		>
 			{children}
 		</AppContext.Provider>
