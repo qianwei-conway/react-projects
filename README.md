@@ -1,6 +1,6 @@
 # Qianwei's React Projects
 
-#### All Projects
+#### Check All My Projects
 
 [My Personal Site](https://qianweiyin.com)
 
@@ -10,47 +10,46 @@
 
 #### useState
 
-1. Birthday Reminder
+1. [Birthday Reminder](https://birthday-reminder.qianweiyin.com/)
 
 #### useEffect and Conditional Rendering
 
-2. Tours
-3. Reviews
+2. [Tours](https://tours.qianweiyin.com/)
+3. [Reviews](https://reviews.qianweiyin.com/)
 4. Questions
-5. Menu
+5. [Menu](https://menu.qianweiyin.com/)
 6. Tabs
 7. Slider
 
 #### Forms
 
-8. Lorem Ipsum Generator
-9. Color Shades Generator
+8. [Lorem Ipsum Generator](https://lorem-ipsum.qianweiyin.com/)
+9. [Color Shades Generator](https://color-generator.qianweiyin.com/)
 10. Grocery Bud
 
 #### useRef
 
-11. Navbar
+11. [Navbar](https://navbar.qianweiyin.com/)
 
 #### useContext
 
-12. Modal And Sidebar
-13. Stripe Submenus
+12. [Modal And Sidebar](https://sidebar-modal.qianweiyin.com/)
+13. [Stripe Submenus](https://stripe-submenus.qianweiyin.com/)
 
 #### useReducer and useContext / Redux
 
-14. Cart
+14. [Cart](https://cart.qianweiyin.com/)
 
 #### React Router and useCallback
 
-15. Cocktails
+15. [Cocktails](https://cocktails.qianweiyin.com/)
 
 ## Advanced Projects
 
-16. Markdown Preview
-17. Random Person
-18. Pagination
-19. Stock Photos
-20. Dark Mode
-21. Movie DB
-22. Hacker News
-23. Quiz
+16. [Markdown Preview](https://markdown-preview.qianweiyin.com/)
+17. [Pagination](https://pagination.qianweiyin.com/)
+18. Stock Photos
+19. [Dark Mode](https://dark-mode.qianweiyin.com/)
+20. Movie DB
+21. Hacker News
+22. Quiz
